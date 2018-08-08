@@ -14,4 +14,13 @@ handleButtonClick(); {
     else (powerup)
   }
 
-export default upgrades;
+  flipflop(); {
+    if (this.clickOrNoClick) {
+      src={ mania }
+    elseif (this.clickOrNoClick); {
+      src={ maniaFinger }
+      }
+    }
+  }
+
+export default Extrafunc;

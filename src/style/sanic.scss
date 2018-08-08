@@ -1,7 +1,17 @@
+html {
+    min-height: 100%;
+    position: relative;
+}
+
 body {
     background-color: darkblue;
     color: white;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
+
+
 
 #maintitle {
     font-family: Monoton;
@@ -14,7 +24,7 @@ body {
     margin-top: 30px;
     padding-bottom: 20px;
     font-weight: 700;
-    color: crimson;
+    color: rgb(255, 2, 150);
 }
 
 #blockline_1 {
@@ -30,10 +40,32 @@ body {
     margin-bottom: 60px;
 }
 
-blockline_3 {
+#blockline_3 {
+    height: 100%;
+    width: 20px;
+    background-color: rgb(255, 51, 0);
+    top: 0;
+    right: 300px;
+    position: absolute;
+}
+
+#blockline_4 {
+    width: 800px;
+    height: 20px;
+    background-color: red;
+    top: 800px;
+    right: 300px;
+    position: absolute;
+}
+
+blockline_logo_1 {
     height: 20px;
     width: 100%;
-    background-color: gold;
+}
+
+.blockline_logo_2 {
+    height: 20px;
+    width: 100%;
 }
 
 .soniclogo {
@@ -47,7 +79,7 @@ blockline_3 {
 }
 
 .number {
-    color: rgb(105, 0, 233);
+    color: rgb(255, 208, 0);
     font-size: 40px;
     font-weight: 700;
     text-align: center;
@@ -66,7 +98,7 @@ blockline_3 {
     text-align: center;
     font-size: 40px;
     font-weight: 700;
-    color: rgb(105, 0, 233);
+    color: rgb(255, 0, 149);
 }
 
 .overall {
