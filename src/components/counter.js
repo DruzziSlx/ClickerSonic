@@ -14,36 +14,33 @@ constructor() {
     }
 
     this.handleButtonClick = this.handleButtonClick.bind(this);
-    this.onOff = this.onOff.bind(this);
 }
 
   handleButtonClick() {
     this.setState({timesClick: this.state.timesClick + 1})
 
-    if (this.state.timesClick % 2 != 0) {
-      document.getElementsByClassName("soniclogo").setAttribute("src", "{ mania }")
-    }
-    else {
-        document.getElementsByClassName("soniclogo").setAttribute("src", "{ maniaFinger }")
-    }
+   
+    var element = document.getElementById("yup");
+
+    
+    element.classList.remove("soniclogowaggle");
+    element.classList.add("soniclogoinvis");
+
+    setTimeout(this.swap, 300)  }
+
+  swap() {
+    var element = document.getElementById("yup")
+
+    element.classList.remove("soniclogoinvis");
+    element.classList.add("soniclogowaggle");
   }
-    onOff() {
-      console.log(document.pic.src);
-      console.log({mania});
-      if (document.pic.src == { mania }) {
-        document.pic.src={ maniaFinger };
-      } 
-      else if (document.pic.src == { maniaFinger }) {
-        document.pic.src={ mania };
-      }
-
-    }
-
 
   render() {
       return(
         <div>
-            <img className="soniclogo" src={ mania } name="pic" onClick={ this.onOff }/>            <div>
+              <img className="soniclogo" src={ mania } onClick={ this.handleButtonClick }/>
+              <img id="yup" className="soniclogowaggle" src={ maniaFinger } onClick={ this.handleButtonClick }/>
+            <div>
               <p className="edit">
               You Have
               </p> 

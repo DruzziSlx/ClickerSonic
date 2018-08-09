@@ -23,4 +23,15 @@ handleButtonClick(); {
     }
   }
 
+
+
+  if (this.state.timesClick % 2 == 0) {
+    document.getElementsByClassName("soniclogo").setAttribute("style", "visibility: visible;");
+    document.getElementsByClassName("soniclogowaggle").setAttribute("style", "visibility: visible;");
+  }
+  else {
+    document.getElementsByClassName("soniclogowaggle").setAttribute("style", "visibility: visible;");
+    document.getElementsByClassName("soniclogo").setAttribute("style", "visibility: visible;");
+  }
+
 export default Extrafunc;

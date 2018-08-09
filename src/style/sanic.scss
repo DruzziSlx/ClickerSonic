@@ -50,11 +50,20 @@ body {
 }
 
 #blockline_4 {
-    width: 800px;
+    width: 985px;
     height: 20px;
-    background-color: red;
-    top: 800px;
-    right: 300px;
+    background-color: rgb(101, 0, 126);
+    top: 786px;
+    right: 320px;
+    position: absolute;
+}
+
+#blockline_5 {
+    width: 985px;
+    height: 20px;
+    background-color: blue;
+    top: 896px;
+    right: 320px;
     position: absolute;
 }
 
@@ -66,6 +75,27 @@ blockline_logo_1 {
 .blockline_logo_2 {
     height: 20px;
     width: 100%;
+}
+
+.soniclogoinvis {
+    visibility: hidden;
+    height: 250px;
+    display: block;
+    margin: auto;
+    position: absolute;
+    z-index: 10;
+    top: 64px;
+    left: 118px;
+}
+
+.soniclogowaggle {
+    height: 250px;
+    display: block;
+    margin: auto;
+    position: absolute;
+    z-index: 10;
+    top: 64px;
+    left: 118px;
 }
 
 .soniclogo {
